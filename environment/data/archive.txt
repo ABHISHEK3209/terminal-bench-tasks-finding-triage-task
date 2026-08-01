@@ -1,0 +1,748 @@
+POSTURE=W2
+FINDING flags=unreachable target=U1
+VECTOR V2 surface=U3 severity=50
+VECTOR V3 surface=U1 severity=203
+VECTOR V1 surface=U1 severity=86
+VECTOR V4 surface=U5 severity=251
+=> PATCH V3
+
+POSTURE=W3
+FINDING flags=- target=U1
+VECTOR V4 surface=U4 severity=81
+VECTOR V3 surface=U4 severity=200
+VECTOR V5 surface=U2 severity=143
+VECTOR V2 surface=U2 severity=231
+VECTOR V1 surface=U4 severity=102
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=- target=U2
+VECTOR V1 surface=U4 severity=11
+VECTOR V2 surface=U4 severity=197
+=> MITIGATE V1
+
+POSTURE=W2
+FINDING flags=unreachable target=U1
+VECTOR V4 surface=U3 severity=5
+VECTOR V3 surface=U3 severity=51
+VECTOR V2 surface=U5 severity=77
+VECTOR V1 surface=U3 severity=36
+=> MITIGATE V4
+
+POSTURE=W2
+FINDING flags=- target=U4
+VECTOR V1 surface=U2 severity=141
+VECTOR V3 surface=U2 severity=114
+VECTOR V4 surface=U2 severity=86
+VECTOR V2 surface=U2 severity=66
+VECTOR V5 surface=U2 severity=51
+=> MITIGATE V5
+
+POSTURE=W2
+FINDING flags=exploited,internal target=U1
+VECTOR V3 surface=U4 severity=238
+VECTOR V4 surface=U5 severity=158
+VECTOR V1 surface=U4 severity=259
+VECTOR V2 surface=U1 severity=153
+VECTOR V5 surface=U1 severity=174
+=> PATCH V5
+
+POSTURE=W2
+FINDING flags=internal target=U3
+VECTOR V2 surface=U1 severity=74
+VECTOR V4 surface=U1 severity=104
+VECTOR V1 surface=U1 severity=71
+VECTOR V3 surface=U1 severity=54
+VECTOR V5 surface=U1 severity=228
+=> MITIGATE V3
+
+POSTURE=W1
+FINDING flags=- target=U5
+VECTOR V1 surface=U1 severity=154
+=> MITIGATE V1
+
+POSTURE=W1
+FINDING flags=exploited,internal,unreachable target=U1
+VECTOR V4 surface=U2 severity=4
+VECTOR V2 surface=U1 severity=151
+VECTOR V1 surface=U1 severity=108
+VECTOR V3 surface=U1 severity=209
+=> PATCH V1
+
+POSTURE=W3
+FINDING flags=- target=U5
+VECTOR V3 surface=U3 severity=35
+VECTOR V2 surface=U2 severity=148
+VECTOR V1 surface=U2 severity=239
+VECTOR V4 surface=U2 severity=62
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=internal,unreachable target=U5
+VECTOR V2 surface=U1 severity=122
+VECTOR V1 surface=U1 severity=216
+VECTOR V4 surface=U1 severity=151
+VECTOR V3 surface=U1 severity=193
+=> MITIGATE V2
+
+POSTURE=W2
+FINDING flags=internal target=U4
+VECTOR V2 surface=U5 severity=61
+VECTOR V3 surface=U1 severity=248
+VECTOR V1 surface=U2 severity=6
+VECTOR V4 surface=U2 severity=216
+=> MITIGATE V1
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V2 surface=U1 severity=155
+VECTOR V3 surface=U1 severity=117
+VECTOR V1 surface=U5 severity=67
+VECTOR V4 surface=U1 severity=182
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=exploited target=U1
+VECTOR V2 surface=U1 severity=194
+VECTOR V1 surface=U1 severity=65
+=> PATCH V1
+
+POSTURE=W3
+FINDING flags=internal target=U5
+VECTOR V1 surface=U1 severity=13
+VECTOR V5 surface=U1 severity=156
+VECTOR V2 surface=U1 severity=150
+VECTOR V3 surface=U1 severity=245
+VECTOR V4 surface=U1 severity=147
+=> AGGREGATE
+
+POSTURE=W2
+FINDING flags=exploited,internal,unreachable target=U3
+VECTOR V5 surface=U1 severity=43
+VECTOR V2 surface=U1 severity=26
+VECTOR V3 surface=U4 severity=141
+VECTOR V4 surface=U1 severity=71
+VECTOR V1 surface=U2 severity=145
+=> MITIGATE V2
+
+POSTURE=W3
+FINDING flags=- target=U2
+VECTOR V3 surface=U3 severity=44
+VECTOR V1 surface=U3 severity=6
+VECTOR V2 surface=U5 severity=184
+VECTOR V4 surface=U5 severity=227
+=> DISMISS
+
+POSTURE=W3
+FINDING flags=- target=U3
+VECTOR V2 surface=U5 severity=142
+VECTOR V3 surface=U5 severity=64
+VECTOR V4 surface=U4 severity=92
+VECTOR V1 surface=U5 severity=99
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=- target=U5
+VECTOR V2 surface=U1 severity=32
+VECTOR V4 surface=U1 severity=107
+VECTOR V3 surface=U1 severity=119
+VECTOR V1 surface=U1 severity=152
+=> MITIGATE V2
+
+POSTURE=W1
+FINDING flags=- target=U3
+VECTOR V1 surface=U1 severity=48
+=> MITIGATE V1
+
+POSTURE=W3
+FINDING flags=- target=U5
+VECTOR V4 surface=U4 severity=198
+VECTOR V3 surface=U2 severity=96
+VECTOR V2 surface=U4 severity=80
+VECTOR V1 surface=U3 severity=201
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=internal target=U5
+VECTOR V3 surface=U1 severity=92
+VECTOR V1 surface=U1 severity=180
+VECTOR V2 surface=U1 severity=16
+VECTOR V4 surface=U1 severity=233
+=> MITIGATE V2
+
+POSTURE=W1
+FINDING flags=exploited target=U3
+VECTOR V2 surface=U3 severity=79
+VECTOR V5 surface=U3 severity=187
+VECTOR V1 surface=U2 severity=39
+VECTOR V3 surface=U3 severity=186
+VECTOR V4 surface=U2 severity=56
+=> PATCH V2
+
+POSTURE=W3
+FINDING flags=exploited,unreachable target=U2
+VECTOR V1 surface=U1 severity=37
+VECTOR V3 surface=U2 severity=17
+VECTOR V5 surface=U2 severity=31
+VECTOR V2 surface=U5 severity=205
+VECTOR V4 surface=U1 severity=15
+=> PATCH V5
+
+POSTURE=W2
+FINDING flags=exploited,unreachable target=U4
+VECTOR V3 surface=U2 severity=54
+VECTOR V1 surface=U2 severity=64
+VECTOR V4 surface=U2 severity=180
+VECTOR V2 surface=U1 severity=113
+=> WATCH
+
+POSTURE=W3
+FINDING flags=- target=U2
+VECTOR V4 surface=U5 severity=78
+VECTOR V1 surface=U3 severity=228
+VECTOR V3 surface=U5 severity=172
+VECTOR V2 surface=U5 severity=256
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=- target=U4
+VECTOR V4 surface=U2 severity=236
+VECTOR V2 surface=U3 severity=4
+VECTOR V1 surface=U2 severity=220
+VECTOR V3 surface=U5 severity=202
+=> MITIGATE V1
+
+POSTURE=W3
+FINDING flags=- target=U2
+VECTOR V2 surface=U1 severity=41
+VECTOR V1 surface=U5 severity=196
+VECTOR V3 surface=U3 severity=151
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=unreachable target=U5
+VECTOR V2 surface=U1 severity=190
+VECTOR V1 surface=U1 severity=119
+=> MITIGATE V1
+
+POSTURE=W1
+FINDING flags=- target=U1
+VECTOR V2 surface=U2 severity=175
+VECTOR V3 surface=U5 severity=27
+VECTOR V1 surface=U3 severity=4
+=> MITIGATE V1
+
+POSTURE=W2
+FINDING flags=- target=U1
+VECTOR V1 surface=U5 severity=70
+VECTOR V3 surface=U3 severity=89
+VECTOR V2 surface=U3 severity=166
+VECTOR V4 surface=U2 severity=227
+=> MITIGATE V1
+
+POSTURE=W1
+FINDING flags=- target=U4
+VECTOR V1 surface=U4 severity=61
+=> PATCH V1
+
+POSTURE=W1
+FINDING flags=- target=U1
+VECTOR V1 surface=U1 severity=103
+VECTOR V2 surface=U1 severity=90
+=> PATCH V2
+
+POSTURE=W2
+FINDING flags=exploited target=U2
+VECTOR V4 surface=U4 severity=130
+VECTOR V3 surface=U4 severity=119
+VECTOR V5 surface=U1 severity=256
+VECTOR V2 surface=U4 severity=21
+VECTOR V1 surface=U5 severity=14
+=> MITIGATE V2
+
+POSTURE=W1
+FINDING flags=exploited,internal target=U4
+VECTOR V2 surface=U4 severity=166
+VECTOR V4 surface=U2 severity=129
+VECTOR V1 surface=U5 severity=23
+VECTOR V3 surface=U4 severity=56
+VECTOR V5 surface=U3 severity=168
+=> MITIGATE V4
+
+POSTURE=W1
+FINDING flags=exploited target=U1
+VECTOR V1 surface=U1 severity=67
+VECTOR V2 surface=U1 severity=160
+=> PATCH V1
+
+POSTURE=W3
+FINDING flags=exploited target=U4
+VECTOR V1 surface=U2 severity=212
+=> WATCH
+
+POSTURE=W2
+FINDING flags=unreachable target=U2
+VECTOR V3 surface=U1 severity=20
+VECTOR V2 surface=U1 severity=16
+VECTOR V5 surface=U4 severity=154
+VECTOR V4 surface=U1 severity=157
+VECTOR V1 surface=U2 severity=149
+=> WATCH
+
+POSTURE=W3
+FINDING flags=exploited,internal target=U5
+VECTOR V2 surface=U5 severity=30
+VECTOR V4 surface=U2 severity=32
+VECTOR V3 surface=U1 severity=65
+VECTOR V1 surface=U5 severity=258
+VECTOR V5 surface=U1 severity=225
+=> WATCH
+
+POSTURE=W1
+FINDING flags=- target=U1
+VECTOR V1 surface=U1 severity=162
+VECTOR V2 surface=U1 severity=153
+=> PATCH V2
+
+POSTURE=W1
+FINDING flags=- target=U1
+VECTOR V2 surface=U1 severity=198
+VECTOR V1 surface=U1 severity=155
+=> PATCH V1
+
+POSTURE=W3
+FINDING flags=- target=U3
+VECTOR V3 surface=U4 severity=109
+VECTOR V5 surface=U5 severity=114
+VECTOR V4 surface=U2 severity=75
+VECTOR V1 surface=U5 severity=132
+VECTOR V2 surface=U2 severity=243
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=exploited,internal target=U1
+VECTOR V1 surface=U3 severity=151
+=> MITIGATE V1
+
+POSTURE=W2
+FINDING flags=unreachable target=U3
+VECTOR V3 surface=U5 severity=166
+VECTOR V2 surface=U1 severity=5
+VECTOR V4 surface=U1 severity=180
+VECTOR V1 surface=U4 severity=83
+=> MITIGATE V2
+
+POSTURE=W1
+FINDING flags=exploited,internal target=U3
+VECTOR V1 surface=U2 severity=234
+VECTOR V5 surface=U4 severity=100
+VECTOR V2 surface=U4 severity=16
+VECTOR V3 surface=U5 severity=125
+VECTOR V4 surface=U4 severity=41
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=exploited,unreachable target=U5
+VECTOR V1 surface=U3 severity=37
+VECTOR V3 surface=U5 severity=138
+VECTOR V2 surface=U5 severity=171
+=> WATCH
+
+POSTURE=W3
+FINDING flags=exploited target=U1
+VECTOR V2 surface=U1 severity=218
+VECTOR V1 surface=U1 severity=99
+=> PATCH V2
+
+POSTURE=W2
+FINDING flags=internal,unreachable target=U4
+VECTOR V3 surface=U3 severity=21
+VECTOR V4 surface=U5 severity=141
+VECTOR V2 surface=U5 severity=165
+VECTOR V1 surface=U5 severity=254
+=> WATCH
+
+POSTURE=W3
+FINDING flags=- target=U3
+VECTOR V1 surface=U5 severity=55
+VECTOR V4 surface=U2 severity=97
+VECTOR V2 surface=U4 severity=257
+VECTOR V3 surface=U5 severity=94
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=internal,unreachable target=U1
+VECTOR V1 surface=U1 severity=6
+VECTOR V2 surface=U1 severity=23
+VECTOR V3 surface=U5 severity=174
+=> MITIGATE V3
+
+POSTURE=W1
+FINDING flags=internal target=U3
+VECTOR V3 surface=U3 severity=225
+VECTOR V1 surface=U3 severity=20
+VECTOR V2 surface=U5 severity=199
+=> PATCH V1
+
+POSTURE=W2
+FINDING flags=internal,unreachable target=U4
+VECTOR V3 surface=U2 severity=58
+VECTOR V1 surface=U2 severity=112
+VECTOR V2 surface=U2 severity=179
+=> MITIGATE V3
+
+POSTURE=W1
+FINDING flags=- target=U1
+VECTOR V2 surface=U1 severity=231
+VECTOR V1 surface=U1 severity=225
+=> PATCH V1
+
+POSTURE=W1
+FINDING flags=internal,unreachable target=U5
+VECTOR V3 surface=U5 severity=144
+VECTOR V2 surface=U4 severity=259
+VECTOR V1 surface=U5 severity=202
+VECTOR V4 surface=U3 severity=223
+=> PATCH V3
+
+POSTURE=W1
+FINDING flags=exploited target=U3
+VECTOR V1 surface=U3 severity=120
+VECTOR V2 surface=U3 severity=158
+=> PATCH V1
+
+POSTURE=W3
+FINDING flags=unreachable target=U2
+VECTOR V4 surface=U3 severity=30
+VECTOR V5 surface=U5 severity=53
+VECTOR V2 surface=U5 severity=159
+VECTOR V1 surface=U3 severity=27
+VECTOR V3 surface=U3 severity=157
+=> WATCH
+
+POSTURE=W3
+FINDING flags=- target=U1
+VECTOR V2 surface=U5 severity=74
+VECTOR V3 surface=U3 severity=26
+VECTOR V1 surface=U5 severity=13
+VECTOR V5 surface=U1 severity=183
+VECTOR V4 surface=U1 severity=53
+=> PATCH V5
+
+POSTURE=W2
+FINDING flags=- target=U5
+VECTOR V3 surface=U1 severity=164
+VECTOR V1 surface=U1 severity=117
+VECTOR V2 surface=U1 severity=21
+=> MITIGATE V2
+
+POSTURE=W2
+FINDING flags=exploited,unreachable target=U1
+VECTOR V3 surface=U3 severity=235
+VECTOR V1 surface=U3 severity=254
+VECTOR V2 surface=U3 severity=133
+=> MITIGATE V2
+
+POSTURE=W3
+FINDING flags=- target=U2
+VECTOR V1 surface=U3 severity=67
+VECTOR V2 surface=U1 severity=236
+VECTOR V3 surface=U3 severity=110
+VECTOR V4 surface=U3 severity=217
+=> DISMISS
+
+POSTURE=W1
+FINDING flags=exploited,internal target=U5
+VECTOR V1 surface=U1 severity=42
+=> MITIGATE V1
+
+POSTURE=W3
+FINDING flags=exploited target=U2
+VECTOR V2 surface=U3 severity=47
+VECTOR V1 surface=U2 severity=172
+VECTOR V3 surface=U1 severity=70
+=> WATCH
+
+POSTURE=W2
+FINDING flags=unreachable target=U1
+VECTOR V1 surface=U3 severity=220
+VECTOR V2 surface=U5 severity=78
+=> MITIGATE V2
+
+POSTURE=W1
+FINDING flags=exploited target=U2
+VECTOR V1 surface=U1 severity=163
+VECTOR V2 surface=U2 severity=65
+VECTOR V3 surface=U2 severity=79
+=> PATCH V2
+
+POSTURE=W1
+FINDING flags=internal target=U2
+VECTOR V3 surface=U2 severity=117
+VECTOR V2 surface=U2 severity=27
+VECTOR V1 surface=U2 severity=169
+=> PATCH V2
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V3 surface=U3 severity=121
+VECTOR V5 surface=U3 severity=146
+VECTOR V4 surface=U3 severity=147
+VECTOR V2 surface=U1 severity=151
+VECTOR V1 surface=U1 severity=28
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=internal target=U1
+VECTOR V1 surface=U3 severity=209
+=> WATCH
+
+POSTURE=W2
+FINDING flags=internal,unreachable target=U2
+VECTOR V2 surface=U4 severity=185
+VECTOR V4 surface=U4 severity=107
+VECTOR V1 surface=U4 severity=216
+VECTOR V3 surface=U4 severity=56
+=> MITIGATE V3
+
+POSTURE=W3
+FINDING flags=- target=U3
+VECTOR V1 surface=U3 severity=121
+VECTOR V2 surface=U1 severity=168
+=> DISMISS
+
+POSTURE=W3
+FINDING flags=unreachable target=U5
+VECTOR V1 surface=U1 severity=82
+VECTOR V2 surface=U1 severity=175
+=> AGGREGATE
+
+POSTURE=W1
+FINDING flags=- target=U1
+VECTOR V1 surface=U1 severity=39
+=> PATCH V1
+
+POSTURE=W3
+FINDING flags=- target=U5
+VECTOR V1 surface=U2 severity=239
+VECTOR V3 surface=U2 severity=254
+VECTOR V2 surface=U2 severity=185
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=- target=U1
+VECTOR V5 surface=U5 severity=56
+VECTOR V2 surface=U3 severity=87
+VECTOR V4 surface=U5 severity=119
+VECTOR V1 surface=U3 severity=15
+VECTOR V3 surface=U5 severity=145
+=> MITIGATE V1
+
+POSTURE=W1
+FINDING flags=internal,unreachable target=U3
+VECTOR V1 surface=U1 severity=121
+=> MITIGATE V1
+
+POSTURE=W3
+FINDING flags=exploited,internal,unreachable target=U3
+VECTOR V3 surface=U3 severity=136
+VECTOR V2 surface=U3 severity=140
+VECTOR V1 surface=U3 severity=192
+VECTOR V4 surface=U5 severity=77
+=> AGGREGATE
+
+POSTURE=W3
+FINDING flags=internal target=U1
+VECTOR V1 surface=U5 severity=167
+VECTOR V2 surface=U1 severity=26
+VECTOR V3 surface=U5 severity=169
+=> WATCH
+
+POSTURE=W3
+FINDING flags=internal target=U5
+VECTOR V1 surface=U5 severity=16
+VECTOR V3 surface=U5 severity=23
+VECTOR V4 surface=U2 severity=167
+VECTOR V2 surface=U1 severity=102
+=> AGGREGATE
+
+POSTURE=W1
+FINDING flags=exploited,unreachable target=U5
+VECTOR V3 surface=U1 severity=138
+VECTOR V1 surface=U1 severity=78
+VECTOR V2 surface=U1 severity=97
+=> MITIGATE V1
+
+POSTURE=W2
+FINDING flags=unreachable target=U2
+VECTOR V1 surface=U4 severity=90
+VECTOR V2 surface=U4 severity=71
+=> MITIGATE V2
+
+POSTURE=W2
+FINDING flags=- target=U4
+VECTOR V3 surface=U5 severity=234
+VECTOR V2 surface=U1 severity=189
+VECTOR V1 surface=U1 severity=22
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=- target=U1
+VECTOR V4 surface=U1 severity=7
+VECTOR V2 surface=U1 severity=84
+VECTOR V3 surface=U4 severity=65
+VECTOR V1 surface=U2 severity=50
+=> PATCH V2
+
+POSTURE=W2
+FINDING flags=exploited target=U3
+VECTOR V1 surface=U1 severity=239
+=> WATCH
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V2 surface=U3 severity=249
+VECTOR V3 surface=U3 severity=211
+VECTOR V1 surface=U3 severity=101
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=exploited target=U1
+VECTOR V2 surface=U3 severity=79
+VECTOR V3 surface=U3 severity=205
+VECTOR V1 surface=U5 severity=155
+=> MITIGATE V2
+
+POSTURE=W1
+FINDING flags=- target=U4
+VECTOR V1 surface=U4 severity=98
+VECTOR V2 surface=U2 severity=75
+=> MITIGATE V2
+
+POSTURE=W3
+FINDING flags=internal,unreachable target=U5
+VECTOR V5 surface=U1 severity=89
+VECTOR V1 surface=U4 severity=3
+VECTOR V4 surface=U1 severity=167
+VECTOR V3 surface=U5 severity=102
+VECTOR V2 surface=U5 severity=95
+=> AGGREGATE
+
+POSTURE=W3
+FINDING flags=exploited target=U3
+VECTOR V1 surface=U3 severity=149
+VECTOR V2 surface=U3 severity=159
+=> PATCH V2
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V2 surface=U1 severity=54
+VECTOR V1 surface=U3 severity=56
+VECTOR V3 surface=U1 severity=49
+VECTOR V4 surface=U3 severity=215
+=> DISMISS
+
+POSTURE=W3
+FINDING flags=exploited,unreachable target=U1
+VECTOR V4 surface=U5 severity=252
+VECTOR V1 surface=U4 severity=11
+VECTOR V3 surface=U3 severity=34
+VECTOR V2 surface=U1 severity=167
+=> MITIGATE V4
+
+POSTURE=W2
+FINDING flags=- target=U5
+VECTOR V1 surface=U1 severity=218
+=> DISMISS
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V3 surface=U1 severity=177
+VECTOR V5 surface=U3 severity=211
+VECTOR V4 surface=U1 severity=110
+VECTOR V2 surface=U1 severity=144
+VECTOR V1 surface=U3 severity=18
+=> DISMISS
+
+POSTURE=W3
+FINDING flags=exploited target=U4
+VECTOR V3 surface=U4 severity=27
+VECTOR V2 surface=U1 severity=132
+VECTOR V1 surface=U5 severity=236
+=> WATCH
+
+POSTURE=W2
+FINDING flags=- target=U1
+VECTOR V1 surface=U3 severity=18
+VECTOR V2 surface=U5 severity=27
+=> MITIGATE V1
+
+POSTURE=W1
+FINDING flags=- target=U2
+VECTOR V1 surface=U2 severity=226
+VECTOR V2 surface=U2 severity=101
+=> PATCH V2
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V1 surface=U2 severity=79
+=> AGGREGATE
+
+POSTURE=W3
+FINDING flags=- target=U1
+VECTOR V2 surface=U3 severity=157
+VECTOR V3 surface=U5 severity=109
+VECTOR V1 surface=U3 severity=176
+=> AGGREGATE
+
+POSTURE=W1
+FINDING flags=internal,unreachable target=U1
+VECTOR V5 surface=U4 severity=228
+VECTOR V1 surface=U2 severity=163
+VECTOR V2 surface=U2 severity=252
+VECTOR V4 surface=U2 severity=119
+VECTOR V3 surface=U4 severity=149
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=exploited target=U3
+VECTOR V3 surface=U3 severity=15
+VECTOR V4 surface=U4 severity=162
+VECTOR V1 surface=U4 severity=243
+VECTOR V2 surface=U4 severity=66
+VECTOR V5 surface=U4 severity=38
+=> WATCH
+
+POSTURE=W2
+FINDING flags=exploited target=U1
+VECTOR V1 surface=U1 severity=50
+VECTOR V2 surface=U1 severity=218
+=> PATCH V2
+
+POSTURE=W1
+FINDING flags=- target=U2
+VECTOR V1 surface=U4 severity=63
+=> MITIGATE V1
+
+POSTURE=W3
+FINDING flags=- target=U3
+VECTOR V3 surface=U5 severity=16
+VECTOR V4 surface=U2 severity=108
+VECTOR V2 surface=U5 severity=205
+VECTOR V1 surface=U2 severity=35
+=> DISMISS
+
+POSTURE=W3
+FINDING flags=- target=U4
+VECTOR V1 surface=U1 severity=201
+VECTOR V2 surface=U1 severity=94
+VECTOR V3 surface=U1 severity=195
+=> DISMISS
+
+POSTURE=W2
+FINDING flags=unreachable target=U2
+VECTOR V2 surface=U4 severity=111
+VECTOR V4 surface=U4 severity=30
+VECTOR V3 surface=U4 severity=41
+VECTOR V1 surface=U4 severity=141
+=> MITIGATE V4

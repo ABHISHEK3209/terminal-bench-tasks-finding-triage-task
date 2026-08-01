@@ -1,0 +1,7 @@
+POSTURE=W1
+FINDING flags=exploited,internal target=U2
+VECTOR V4 surface=U1 severity=40
+VECTOR V2 surface=U5 severity=209
+VECTOR V3 surface=U1 severity=22
+VECTOR V1 surface=U1 severity=198
+VECTOR V5 surface=U2 severity=29

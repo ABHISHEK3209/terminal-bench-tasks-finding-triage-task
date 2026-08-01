@@ -1,0 +1,35 @@
+artifacts = ["/app/solve.py"]
+
+[task]
+name = "finding-router"
+description = "Reconstruct a posture-aware finding disposition router from a labeled archive of finding records and emit its exact one-line decision for unseen records."
+
+[metadata]
+# --- Pre-seeded for you when this repo was created - DO NOT EDIT ---
+category = "Software Engineering"
+subcategory = "Refactoring and Code Modernization"
+# --- Fixed for this dataset - LEAVE AS-IS ---
+model_tested = "Opus-4.8"
+agent_tested = "Terminus-2"
+# --- You fill these in ---
+task_objective = ["analyze", "implement"]
+artifact_type = ["single_script_or_program"]
+expert_time_estimate_hours = 6
+difficulty_explanation = "A security engineer would rebuild this kind of finding disposition router after a retired service left only its per-finding decisions. It is valuable because the chosen patch/mitigate/aggregate/watch/dismiss action determines which vector is selected and whether related-surface evidence is reused, so a wrong reading silently changes real outcomes. The 103 synthetic finding records model realistic operating bursts with repeated vectors from one surface, severity ordering independent of input order, related-surface evidence, exploited and internal conditions, and posture-specific legacy behavior. The difficult part is recovering a nonstandard whole-finding arbitration policy separately for three postures. A correct decision can depend on whether the target surface carries more than one vector, whether related-surface entries carry enough items or enough distinct surfaces, and whether a whole finding warrants the collapse action, not on the highest-severity or first-listed vector in isolation. Plausible mistakes include using a one-vector related rule, confusing repeated own-surface entries with independent related-surface evidence, choosing the wrong severity direction, applying exploited or internal behavior too broadly, using one posture policy globally, and choosing an intuitive action precedence. A qualified security engineer would spend about six focused hours building a differential analysis harness, recovering the posture policies, implementing a robust parser, and validating boundary records."
+solution_explanation = "Parse a posture, its flags and target surface, and the unordered vector set. Recover the per-posture policy from the archive by comparing finding records that isolate own-surface repetition, related-surface vector count and surface diversity, severity selection, all-related records, exploited scopes, internal behavior, action precedence, and fallback behavior. Apply the recovered policy to the whole vector set, emitting either the selected action with its vector id or the literal aggregate, watch, or dismiss action. The reference implementation derives every result from its input and contains no fixture-specific answers."
+verification_explanation = "The verifier requires one self-contained `/app/solve.py` and runs a copied version as the unprivileged nobody user in a fresh scratch directory with a scrubbed environment. It exact-matches one normalized output line and successful exit status against 41 fixed unseen records whose inputs and answers are stored only under locked `/tests`. It also invokes 58 deterministic fresh unseen records generated in the test package and checks them with an independent oracle, and it grades a further set of records generated from an unseeded random source at verify time against that same oracle, so a solver that bakes in answers for the committed fixed and fresh inputs at authoring time cannot pass. There is no partial credit or tolerance. The sandbox removes group and other access to `/tests`, and a probe confirms an unprivileged program can read neither the fixed answer key, nor the held inputs, nor the test file that embeds the oracle, nor any listing of `/tests`. The fixture generator enumerates 442,368 posture-local policy settings across own and related evidence thresholds, all exploited surface scopes, internal behavior, both flag-gate orders, all action precedence permutations, and every fallback flag scope. It verifies that every setting which differs on fixed, fresh, random audit, or exhaustive semantic audit records is contradicted by the 103 visible labeled records."
+
+[verifier]
+timeout_sec = 300.0
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []

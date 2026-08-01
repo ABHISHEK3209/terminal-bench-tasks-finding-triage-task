@@ -1,0 +1,4 @@
+POSTURE=W1
+FINDING flags=- target=U2
+VECTOR V1 surface=U2 severity=6
+VECTOR V2 surface=U4 severity=222
